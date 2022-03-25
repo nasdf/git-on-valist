@@ -13,7 +13,7 @@ jobs:
           mv objects/pack/*.pack .
           git unpack-objects < *.pack
           rm -f *.pack objects/pack/*
-      - uses: valist-io/valist-github-action@v2.0.0
+      - uses: valist-io/valist-github-action@v2
         with:
           private-key: ${{ secrets.PRIVATE_KEY }}
           account: nasdf
