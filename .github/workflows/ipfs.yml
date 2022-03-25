@@ -1,6 +1,7 @@
 on:
-  schedule:
-    - cron: '00 12 * * *'
+  push
+  # schedule:
+  #   - cron: '00 12 * * *'
 jobs:
   archive_ipfs:
     runs-on: ubuntu-latest
