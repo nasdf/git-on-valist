@@ -10,9 +10,6 @@ jobs:
       - run: |
           git clone --bare https://github.com/ipfs/go-ipfs/ .
           git update-server-info
-          mv objects/pack/*.pack .
-          git unpack-objects < *.pack
-          rm -f *.pack objects/pack/*
       - uses: valist-io/valist-github-action@v2
         with:
           private-key: ${{ secrets.PRIVATE_KEY }}
