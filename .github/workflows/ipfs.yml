@@ -12,6 +12,7 @@ jobs:
           git update-server-info
       - uses: valist-io/valist-github-action@v2
         with:
+	  rpc-url: https://rpc.valist.io/mumbai
           private-key: ${{ secrets.PRIVATE_KEY }}
           account: nasdf
           project: git-on-valist
